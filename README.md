@@ -99,7 +99,7 @@ nodemon
  
  ## Notes
  
-1. For api testing and development an API testing tool is required. Insomnia or Postman Recommended 
+1. For api testing and development, an API testing tool is required. Insomnia or Postman Recommended 
 
 > Found a bug? Please, report it here https://github.com/ceeghee/NodeJs-TypeORM-CRUD-Server/issues
 
