@@ -1,11 +1,11 @@
-#NodeJs TypeORM CRUD API
+# NodeJs TypeORM CRUD API
 	
 ***Create and deploy  your nodejs rest Api in Seconds***
  
 ---
  
  ## Description
- Simple yet powerful REST Api for Nodejs. The Project is simple, easy to setup and should give you a general knowledge about the TypeORM. It helps you to get a rest API with 
+ Simple yet powerful REST Api for Nodejs. The Project is simple, easy to setup and should give you a general knowledge about the TypeORM.
  
  ---
 
