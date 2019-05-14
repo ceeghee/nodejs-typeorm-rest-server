@@ -1,6 +1,6 @@
-# NodeJs TypeORM CRUD API
+# NodeJs TypeORM CRUD Server
 	
-***Create and deploy  your nodejs rest Api in Seconds***
+***Create and deploy  your nodejs rest server in Seconds***
  
 ---
  
@@ -20,7 +20,7 @@
 - **Lightweight**
     - Very little dependencies to get started, other dependencies can be added depending on your preference.
 - **Middlewares andvance Routing**
-    - Basic Authentication and Validation Middlewares comes pre-configured with their respective API's
+    - Basic Authentication and Validation Middlewares come pre-configured with their respective Routers
 - **Other TypeORM features**
     - Since the Project uses TypeORM, you get access to other TypeORM features.
 
