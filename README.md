@@ -1,6 +1,6 @@
-# NodeJs TypeORM CRUD API
-	
-***Create and deploy  your nodejs rest Api in Seconds***
+# NodeJs TypeORM CRUD Server
+    
+***Create and deploy  your nodejs rest server in Seconds***
  
 ---
  
@@ -20,14 +20,14 @@
 - **Lightweight**
     - Very little dependencies to get started, other dependencies can be added depending on your preference.
 - **Middlewares andvance Routing**
-    - Basic Authentication and Validation Middlewares comes pre-configured with their respective API's
+    - Basic Authentication and Validation Middlewares come pre-configured with their respective Routers
 - **Other TypeORM features**
     - Since the Project uses TypeORM, you get access to other TypeORM features.
 
  - **Other Features**
     - produced code is performant, flexible, clean and maintainable
-	- follows all possible best practices
-	- migrations and automatic migrations generation
+    - follows all possible best practices
+    - migrations and automatic migrations generation
     - works in NodeJS / Browser / Ionic / Cordova / React Native / NativeScript / Expo / Electron platforms
   
 
@@ -99,7 +99,7 @@ nodemon
  
  ## Notes
  
-1. For api testing and development an API testing tool is required. Insomnia or Postman Recommended 
+1. For api testing and development, an API testing tool is required. Insomnia or Postman Recommended 
 
 > Found a bug? Please, report it here https://github.com/ceeghee/NodeJs-TypeORM-CRUD-Server/issues
 

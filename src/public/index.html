@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TYPEORM</title>
+</head>
+	<script  src="/socket.io/socket.io.js"></script>
+	<script >
+		
+		var socket = io();
+		// socket.on("broadcast",function(data){
+			// console.log(data);
+			socket.emit("message","Thanks for the broadcast")
+			// document.write(data);
+		// })
+		socket.on("message",function(data){
+			console.log("from Server : "+data);
+		})
+	</script>
+<body>
+<h1>THIS IS BACKED</h1>
+</body>
+</html>
