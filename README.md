@@ -1,5 +1,9 @@
 # NodeJs TypeORM CRUD Server
+<<<<<<< HEAD
     
+=======
+	
+>>>>>>> b20c1be5767519a3dbc16ab6340676eaceb841cd
 ***Create and deploy  your nodejs rest server in Seconds***
  
 ---
