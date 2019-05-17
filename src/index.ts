@@ -23,7 +23,7 @@ createConnection().then(async connection => {
     app.use(bodyParser.urlencoded({extended: true}));
 
     app.get('/',function(req,res){
-    res.sendFile('public/index.html',{root:__dirname}); // When Get Method is used, return default Index
+        res.sendFile('public/index.html',{root:__dirname}); // When Get Method is used, return default Index
     })
 
     // register express routes from defined application routes

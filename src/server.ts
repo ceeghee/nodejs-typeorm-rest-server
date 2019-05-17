@@ -3,6 +3,7 @@ import * as express from 'express';
 import * as socketIo from 'socket.io';
 
 import { Message } from './model';
+import { GameController } from './controllers/GameController';
 
 export class SocketServer {
     public static readonly PORT:number = 3000;
@@ -44,12 +45,11 @@ export class SocketServer {
 
         this.io.on('connect', (socket: any) => {
             this.socketID = socket.id
+            let game = new GameController(socket, this.io);
             console.log('Connected client on socket id %s.', socket.id);
-            this.io.sockets.emit("broadcast","this is a broadcast");
-            socket.on("message", (m: Message) => {
-                     console.log('[server](message)(from): %s', JSON.stringify(m), this.socketID);
-            // this.io.sockets.emit('message', m);
-                    this.io.to(this.socketID).emit('message', m+" 2");
+            socket.on("Start Game", (m: Message) => {
+                game.start();
+                 console.log("Client wants to play game");
             });
 
             socket.on('disconnect', () => {

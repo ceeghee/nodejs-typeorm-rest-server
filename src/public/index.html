@@ -9,11 +9,23 @@
 		var socket = io();
 		// socket.on("broadcast",function(data){
 			// console.log(data);
-			socket.emit("message","Thanks for the broadcast")
+			socket.emit("Start Game","start")
 			// document.write(data);
 		// })
-		socket.on("message",function(data){
+		socket.on("instruction",function(data){
 			console.log("from Server : "+data);
+
+			socket.emit("addition",2);
+		});
+
+		socket.on("add-question", (data)=>{
+			console.log(data);
+
+			socket.emit("add-anwser",4);
+		})
+
+		socket.on("report", (data)=>{
+			console.log(data)
 		})
 	</script>
 <body>
