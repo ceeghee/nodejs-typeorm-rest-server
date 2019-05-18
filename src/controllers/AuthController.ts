@@ -7,6 +7,7 @@ import { User } from "../entity/User";
 import config from "../config/config";
 
 class AuthController {
+  
   static login = async (req: Request, res: Response) => {
     //Check if username and password are set
     let { username, password } = req.body;
