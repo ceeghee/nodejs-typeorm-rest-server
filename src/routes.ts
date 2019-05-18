@@ -1,6 +1,8 @@
 import {UserController} from "./controllers/UserController";
 import { checkJwt } from "./middlewares/checkJwt";
 
+//former routes design
+// refer to ./routes/index.ts for new configuration
 export const Routes = [{
     method: "get",
     route: "/api/users",

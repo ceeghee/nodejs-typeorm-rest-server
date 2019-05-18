@@ -22,12 +22,14 @@
   //Edit one user
   router.patch(
     "/:id([0-9]+)",
+    [checkJwt],
     UserController.editUser
   );
 
   //Delete one user
   router.delete(
     "/:id([0-9]+)",
+    [checkJwt],
     UserController.deleteUser
   );
 
