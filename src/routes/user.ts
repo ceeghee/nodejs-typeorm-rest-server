@@ -1,36 +1,35 @@
 
-  // import { Router } from "express";
-  // import UserController from "../controllers/UserController";
-  // import { checkJwt } from "../middlewares/checkJwt";
-  // import { checkRole } from "../middlewares/checkRole";
+  import { Router } from "express";
+  import {UserController} from "../controllers/UserController";
+  import { checkJwt } from "../middlewares/checkJwt";
 
-  // const router = Router();
+  const router = Router();
 
-  // //Get all users
-  // router.get("/", [checkJwt, checkRole(["ADMIN"])], UserController.listAll);
+  //Get all users
+  // router.get("/api/users", [checkJwt, checkRole(["ADMIN"])], UserController.listAll);
+  router.get("/", [checkJwt], UserController.all);
 
-  // // Get one user
-  // router.get(
-  //   "/:id([0-9]+)",
-  //   [checkJwt, checkRole(["ADMIN"])],
-  //   UserController.getOneById
-  // );
+  // Get one user
+  router.get(
+    "/:id([0-9]+)",
+    [checkJwt],
+    UserController.getOneById
+  );
 
-  // //Create a new user
-  // router.post("/", [checkJwt, checkRole(["ADMIN"])], UserController.newUser);
+  // Create a new user
+  router.post("/",  UserController.saveUser);
 
-  // //Edit one user
+  //Edit one user
   // router.patch(
   //   "/:id([0-9]+)",
-  //   [checkJwt, checkRole(["ADMIN"])],
+  //   [checkJwt],
   //   UserController.editUser
   // );
 
-  // //Delete one user
-  // router.delete(
-  //   "/:id([0-9]+)",
-  //   [checkJwt, checkRole(["ADMIN"])],
-  //   UserController.deleteUser
-  // );
+  //Delete one user
+  router.delete(
+    "/:id([0-9]+)",
+    UserController.deleteUser
+  );
 
-  // export default router;
+  export default router;

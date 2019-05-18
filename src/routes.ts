@@ -1,10 +1,12 @@
 import {UserController} from "./controllers/UserController";
+import { checkJwt } from "./middlewares/checkJwt";
 
 export const Routes = [{
     method: "get",
     route: "/api/users",
     controller: UserController,
-    action: "all"
+    action: "all",
+    auth:checkJwt
 }, {
     method: "get",
     route: "/api/users/:id",
