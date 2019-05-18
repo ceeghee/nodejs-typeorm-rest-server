@@ -20,11 +20,10 @@
   router.post("/",  UserController.saveUser);
 
   //Edit one user
-  // router.patch(
-  //   "/:id([0-9]+)",
-  //   [checkJwt],
-  //   UserController.editUser
-  // );
+  router.patch(
+    "/:id([0-9]+)",
+    UserController.editUser
+  );
 
   //Delete one user
   router.delete(
