@@ -21,6 +21,9 @@
     - Very little dependencies to get started, other dependencies can be added depending on your preference.
 - **Middlewares andvance Routing**
     - Basic Authentication and Validation Middlewares come pre-configured with their respective Routers
+- **SocketIO Support**
+    - Support for Realtime events using socketio
+    - Basic GameController example to demonstrate socketio usage
 - **Other TypeORM features**
     - Since the Project uses TypeORM, you get access to other TypeORM features.
 
