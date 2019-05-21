@@ -70,7 +70,8 @@ export class UserController {
             let stat = await userRepository.remove(userToRemove);
             return stat ? res.send("User Deleted Successfully"): res.json({message:"error occured"})
             // return status ? status : res.json({message:"error occured, not found"})
-    }
+      }
+
 
       static editUser = async (req: Request, res: Response) => {
           //Get the ID from the url

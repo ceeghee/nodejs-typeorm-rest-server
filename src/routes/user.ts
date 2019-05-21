@@ -7,7 +7,7 @@
 
   //Get all users
   // router.get("/api/users", [checkJwt, checkRole(["ADMIN"])], UserController.listAll);
-  router.get("/", [checkJwt], UserController.all);
+  router.get("/", UserController.all);
 
   // Get one user
   router.get(

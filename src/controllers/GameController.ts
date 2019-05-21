@@ -15,10 +15,6 @@ export class GameController{
 		this.io = io;
 	}
 
-	// private Init(){
-	// 	// this.io = 
-	// }
-
 	public start() : void {
 		console.log(this.socket.id);
 		this.io.to(this.socket.id).emit("instruction","Welcome to a Basic Math Game, Reply with Addition or Subtraction and a number to Begin")
