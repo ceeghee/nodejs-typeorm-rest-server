@@ -9,11 +9,17 @@
   // router.get("/api/users", [checkJwt, checkRole(["ADMIN"])], UserController.listAll);
   router.get("/", UserController.all);
 
-  // Get one user
+  // Get one user(userId)
   router.get(
     "/:id([0-9]+)",
     [checkJwt],
     UserController.getOneById
+  );
+
+  // Get one user(username)
+  router.get(
+    "/:username",
+    UserController.getOneByUsername
   );
 
   // Create a new user
